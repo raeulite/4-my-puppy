@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>happy birthday, my puppy</title>
+
+<link rel="icon" type="image/ico" href="bee.ico">
+<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣴⠶⠶⠶⠶⠦⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⠾⠟⣿⣿⠾⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠻⢶⣤⣠⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠟⠉⠀⠀⠸⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢷⣀⠈⠙⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⢀⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⠏⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡀⠀⠀⠀⠈⠻⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡟⠁⠀⠀⠀⠀⢀⡿⠁⠀⠀⣰⣶⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣄⠀⠀⠀⠀⠀⢿⡀⠀⠀⠀⠀⠀⠙⠷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣀⣴⠟⠋⠀⠀⠀⠀⠀⠀⣼⠇⠀⠀⠐⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⡇⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⠀⠈⠙⠳⣦⣄⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⣀⣴⠾⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⢿⡇⠉⠁⠉⠈⠉⠀⠀⠀⠀⠀⠀⣠⢤⣀⠀⠀⠀⠀⠀⠉⠿⠿⠁⡀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢶⣄⠀⠀⠀
+⠀⣠⡾⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣷⣄⠤⠠⠐⢀⡀⠀⠀⠀⠀⠀⠋⠁⠉⠁⠀⠀⠀⠀⠀⠄⠀⠀⠀⢁⠀⠀⣼⢿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡄⠀
+⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⠻⢶⣤⣴⡾⠷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣦⣤⠀⠜⣀⣴⠟⠈⢿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⠀
+⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡿⠁⠀⠀⣿⠃⠀⠀⢸⡟⠳⠶⠶⠶⢦⣶⣴⣶⣴⣶⣶⣿⠉⠀⠹⣷⣿⣿⣥⣄⡀⠀⢻⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
+⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠁⠀⠀⠀⢿⣆⣠⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠳⠀⢀⣿⠟⠉⠉⠉⠛⣷⡄⠙⢷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠇
+⠘⢷⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⠟⠃⠀⠀⠀⠀⠀⠀⣼⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠶⠿⣷⡀⠀⠀⣀⠀⠈⣿⡄⠀⠙⢷⣄⡀⠀⠀⠀⠀⠀⠀⣀⣼⠏⠀
+⠀⠀⠉⠛⠷⠶⠶⠶⠶⠾⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⣤⣴⠏⠀⠀⣽⡇⠀⠀⠀⠈⠛⠿⠶⠶⠶⠶⠿⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⣠⣤⣄⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⣼⡇⠀⠀⠀⠀⣴⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⡾⠋⠀⠁⠀⠀⠀⠀⠀⢀⣾⠛⠉⠙⠓⠀⠀⢀⣴⠟⠛⠿⠾⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷⠀⠀⠐⢶⣶⣶⣶⣶⣾⣿⡀⠀⠀⢶⡶⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣧⣀⣠⡿⠁⠀⠀⠀⠀⢹⣇⡀⣠⡾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠁⠀⠀⠀⠀⠀⠀⠀⠙⠛⠉⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+shout out sa bf kong sobrang sarap , happy happy birthday nga pala sayo mabangis yummilicious kong mister i love you 
+magpapakasal tayo soon and magiging cat parents tayo heheh mwa
+pls know that i ll always be here w u by ur side and u are loved . u can always lean on me and u can drench my shirt with ur tears
+enjoy ur day and sorry if my gift was kinda cringe i;ll prepare more gifts for u kahit dimo birthday hee hee
+
+- ♡ rae, misis mo (♡ˊ͈ ꒳ ˋ͈) -->
+
+<style>
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #dcefff, #fffdf6);
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #5b6b7a;
+    text-shadow: 0 0 10px rgba(255,255,255,100);
+    font-family: 'wizardsmagic';
+    background-image: url("ec7eb7d9ff4083aefdc50ca61c780f31.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+@font-face {
+    font-family: 'wizardsmagic';
+    src: url('wizardsmagic.ttf');
+}
+
+h1 {
+    font-family: 'wizardsmagic';
+}
+
+/* FIRST SCREEN */
+#intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #5c6f82;
+}
+
+#intro h1 {
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+#intro p {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.gift {
+    width: 400px;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: float 2s infinite;
+    animation-timing-function: steps(1);
+}
+
+.gift:hover {
+    transform: scale(1.08);
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/* MAIN CONTENT */
+#main {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 800px;
+    height: 580px;
+    background-image: url("cinna2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #5b6b7a;
+    animation: dreamyAppear 1s ease forwards;
+}
+
+@keyframes dreamyAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cake {
+    font-size: 10px;
+}
+
+.cake img {
+    width: 150px;
+    height: auto;
+}
+
+.card h2 {
+    color: #7aa7d9;
+    font-size: 35px;
+}
+
+.message {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background: #ffcfde;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #ffb5d4;
+	box-shadow: 0 4px 10px rgba(185, 217, 255, 0.4);
+}
+
+.buttons button:hover {
+    background: #98c6ff;
+    transform: scale(1.05);
+	box-shadow: 0 6px 15px rgba(152, 198, 255, 0.6);
+}
+
+.top-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #6f7f91;
+}
+
+.back-btn {
+    color: #9e807d;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    display: block;
+    text-align: right;
+	border: 2px dotted #fa89bc;
+	border-radius: 30px;
+	
+    position: absolute;
+    top: 30px;
+    left: 30px; 
+	
+	z-index: 9999;
+}
+
+.back-btn:hover {
+    transform: translateX(-3px);
+}
+
+.intro-box {
+    background-image: url("hbdmylove_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 900px;   
+    height: 700px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bottom-left-img {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    width: 500px; 
+    height: auto;
+    pointer-events: none; 
+    z-index: 10;
+}
+
+.top-left-img {
+    position: absolute;
+    top: 38px;
+    left: 85px;
+    width: 307px;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.top-right-img {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 450px;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.bottom-right-img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.memory-img,
+.message-img,
+.playlist-img {
+    width: 100px;
+    height: auto;
+}
+
+.memory-btn,
+.message-btn,
+.playlist-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+}
+
+.memory-btn:hover .memory-img { content: url("polaroid 2.png"); }
+.message-btn:hover .message-img { content: url("lettercat2.png"); }
+.playlist-btn:hover .playlist-img { content: url("headphones2.png"); }
+
+.memory-btn:hover p,
+.message-btn:hover p,
+.playlist-btn:hover p {
+    color: #9dd8ff;
+}
+
+#message-page,
+#memories-page {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("angel.jpg");
+    background-repeat: repeat !important; 
+    background-size: auto; 
+    background-attachment: fixed; 
+	
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 80px 20px;
+}
+
+#music-page {
+    display: none; 
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("angel.jpg");
+    background-repeat: repeat !important;
+    background-size: auto;
+    background-attachment: fixed;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+	
+	z-index: 1;
+}
+
+.message-collage {
+    position: relative;
+    width: 100%;
+    min-height: 200vh;
+}
+
+.memo-stack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.memo {
+    width: 800px;
+    height: auto;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: #ffbad3;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.bf {
+    position: absolute;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.bf1 { top: 40px; left: 40px; width: 300px; }
+.bf2 { top: 50%; right: 80px; transform: translateY(-50%); width: 300px; }
+.bf3 { bottom: 10px; left: 60px; width: 470px; }
+
+.polkastar { position: absolute; top: -10px; right: 10px; width: 400px; z-index: 20; }
+.spiral { position: absolute; top: 270px; right: 10px; width: 350px; z-index: 20; }
+.cloversticker { position: absolute; top: -70px; left: 200px; width: 330px; z-index: 20; }
+.teaparty { position: absolute; bottom: -10px; right: 60px; width: 420px; z-index: 20; }
+.cinnamoroll { position: absolute; top: 840px; left: 50px; width: 450px; z-index: 70; }
+.heart { position: absolute; top: 450px; left: 25px; width: 350px; z-index: 20; }
+.starz { position: absolute; top: 570px; left: 25px; width: 420px; z-index: 20; }
+.shiny { position: absolute; bottom: 240px; right: 30px; width: 400px; z-index: 20; }
+
+.page-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* RAINING GIFS */
+.rain-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999999; 
+}
+
+.rain-drop {
+    position: absolute;
+    width: 100px;  
+    height: auto;
+    top: -50px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translate(0px, -100px); opacity: 0; }
+    10% { opacity: 1; }
+    25% { transform: translate(10px, 20vh); }
+    50% { transform: translate(-8px, 50vh); }
+    75% { transform: translate(6px, 80vh); }
+    100% { transform: translate(-4px, 120vh); opacity: 0; }
+}
+
+/* MEMORY PAGE */
+.memory-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.photo-strip {
+    width: 180px;
+    height: auto;
+    margin-left: -10px;
+    position: relative;
+    z-index: 5;
+}
+
+.strip-left { transform: rotate(-3deg); }
+.strip-right { transform: rotate(3deg); }
+.memory-memo { width: 400px; height: auto; position: relative; z-index: 5; }
+.memory-side { display: flex; flex-direction: column; gap: 25px; margin-left: 20px; }
+
+.memory-pic {
+    width: 270px;
+    height: auto;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 5;
+}
+
+.pic1 { transform: rotate(-4deg); }
+.pic2 { transform: rotate(4deg); }
+.pic3 { transform: rotate(-3deg); }
+
+.spiral2 { position: absolute; bottom: 150px; left: 250px; width: 300px; z-index: 20; }
+.starpink { position: absolute; bottom: 70px; left: -40px; width: 400px; z-index: 20; }
+.stardesign { position: absolute; top: -20px; right: 210px; width: 250px; z-index: 20; }
+.laceheart { position: absolute; top: 10px; left: 150px; width: 350px; z-index: 1; }
+.angelwings { position: absolute; top: -30px; left: 50%; transform: translateX(-50%); width: 450px; z-index: 999; }
+.meow { position: absolute; bottom: 130px; right: 110px; width: 450px; z-index: 1; }
+.stardivider { position: absolute; bottom: 180px; left: 50%; transform: translateX(-50%); width: 550px; z-index: 999; }
+
+/* MUSIC SECTION */
+.music-layout {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-end;       
+    gap: 30px;                  
+    padding: 0 0 0 40px;         
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.music-left {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-art {
+    width:430px;
+    height: auto;
+    border-radius: 10px;
+	z-index: 20;
+	
+}
+
+.music-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;
+}
+
+.song-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+	
+    background-image: url("download (4).jpeg");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08); 
+	border-style: dotted;
+	border-color: #c9ad9d;
+	
+    width: 850px; 
+	padding: 0px 25px;
+    box-sizing: border-box;
+	
+}
+
+.columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.song-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%; 
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.6);
+	
+    padding: 6px 10px;
+	margin-bottom: -2px;
+	
+    border-radius: 9px;
+	border-style: dashed;
+	border-color: #fca2c9;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.song img {
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 12px;
+    object-fit: cover;
+
+}
+
+.song-info {
+    flex: 1;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.music-subtitle {
+    font-size: 20px;
+    color: #a65b7c; 
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.music-banner {
+    width: 400px;
+    height: 45px; 
+    object-fit: contain;
+    display: block;
+}
+
+.banner-top {
+    margin-bottom: 5px; 
+	margin-top: 5px;
+}
+
+.banner-bottom {
+    margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.play-toggle {
+    background: #b9d9ff !important;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4e6480;
+    font-size: 15px;
+    transition: 0.2s;
+	box-sizing: border-box;
+}
+
+.play-toggle:hover {
+    background: #98c6ff !important;
+    transform: scale(1.1);
+}
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 5px;
+    background: rgba(91, 107, 122, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #7aa7d9;
+    border-radius: 10px;
+    transition: width 0.1s linear;
+}
+
+.time-display {
+    font-size: 11px;
+    color: #5b6b7a;
+    font-family: sans-serif; 
+    min-width: 25px;
+}
+
+.starshiny{ 
+	position: absolute; 
+	bottom: -40px; 
+	right: -20px; 
+	width: 400px; 
+	z-index: 20; 
+}
+
+.spiral2 { 
+	position: absolute; 
+	top: -90px; 
+	left: 250px; 
+	width: 350px; 
+	z-index: 1; 
+}
+
+.MREOW { 
+	position: absolute; 
+	bottom: 100px; 
+	right: 20px; 
+	width: 350px; 
+	z-index: -1; 
+}
+
+.heartbling{
+	position: absolute; 
+	bottom: -150px; 
+	left: 130px; 
+	width: 500px; 
+	z-index: 25; 
+}
+
+.polkastar2{
+	position: absolute; 
+	top: 180px; 
+	left: 320px; 
+	width: 350px; 
+	z-index: -1; 
+}
+
+.heart2{
+	position: absolute; 
+	top: 100px; 
+	left: 50px; 
+	width: 340px; 
+	z-index: -1; 
+}
+
+.heartlace{
+	position: absolute; 
+	top: -20px; 
+	right: 40px; 
+	width: 300px; 
+	z-index: -1; 
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="bg-music" loop>
+  <source src="bg_soft.mp3" type="audio/mpeg">
+</audio>
+
+<!-- raining gifs ng lolo mo -->
+<div class="rain-container">
+  <img src="tumblr_4c734ee453a8fb55d45f6ca28ab2bb6f_0896c89f_1280.webp" class="rain-drop" style="left:10%; animation: fall 5s linear infinite; animation-delay:0s;">
+  <img src="tumblr_a8eba00031c786e6e7fb985e76afcb61_bba060b3_400.webp" class="rain-drop" style="left:25%; animation: fall 6s linear infinite; animation-delay:2s;">
+  <img src="tumblr_7841704db93aa517b854d08b72fc2d86_13739e0c_100.webp" class="rain-drop" style="left:40%; animation: fall 5.5s linear infinite; animation-delay:1s;">
+  <img src="tumblr_bd5e936737bf8bb826780cab4bbcd5da_33728302_250.webp" class="rain-drop" style="left:70%; animation: fall 4.8s linear infinite; animation-delay:3s;">
+  <img src="tumblr_92d031a927f278623406c22905783d8a_14f05bc6_75.webp" class="rain-drop" style="left:85%; animation: fall 5.8s linear infinite; animation-delay:0.5s;">
+</div>
+
+<!-- INTRO SCREEN -->
+<div id="intro">
+  <img src="my jevin.png" class="bottom-left-img">
+  <img src="stamp.png" class="top-left-img">
+  <img src="cutie_gif.gif" class="top-right-img">
+  <img src="side.png" class="bottom-right-img">
+  <img src="buttons.png" class="bottom-right-img">
+
+  <div class="intro-box">
+    <h1>happy birthday, my love ♡</h1>
+    <p class="top-text">i made something 4 uu ο(=•ω＜=)ρ⌒☆<br>
+    <img src="tumblr_6e7767ae8833d85d3840e37bed6f5895_51353a89_75.webp"> click the gift to open ! ! ! 
+    <img src="tumblr_7ca711059fc0ed2da0d06d73a3b52451_8c472913_75.webp"><img src="tumblr_928e57a2650dd088ae8d9e09150fb537_7a00d071_75.webp"></p>
+    <img src="gift.png" class="gift" onclick="openGift()">
+  </div>
+</div>
+
+<!-- MAIN SCREEN -->
+<div id="main">
+  <button class="back-btn" onclick="goBack()">
+    <img src="tumblr_aa840192e61fde2f2be2a7a251a9a766_4517c01c_75.webp"> go back
+  </button>
+
+  <img src="my jevin.png" class="bottom-left-img">
+  <img src="stamp.png" class="top-left-img">
+  <img src="cutie_gif.gif" class="top-right-img">
+  <img src="side.png" class="bottom-right-img">
+  <img src="buttons.png" class="bottom-right-img">
+
+  <div class="card">
+    <div class="cake"><img src="cake.png"></div>
+    <h2><img src="heartu.webp"> happy birthday ! ! ! <img src="noteblue.webp"><img src="blink.webp"></h2>
+    
+    <div style="display: flex; justify-content: center; gap: 5px; width: 100%;">
+      <img src="tumblr_fd35cf12725a4247eb82be57c63966ce_b02ba21a_400.webp" style="width:210px; height:auto;">
+      <img src="tumblr_fd35cf12725a4247eb82be57c63966ce_b02ba21a_400.webp" style="width:210px; height:auto;">
+      <img src="tumblr_fd35cf12725a4247eb82be57c63966ce_b02ba21a_400.webp" style="width:210px; height:auto;">
+    </div>
+    
+    <div class="message">
+      thank you for being my sweetest boy .<br>
+      i hope today feels soft and happy, just like you make me feel ♡
+    </div>
+
+    <div class="buttons">
+      <div class="menu-container">
+        <div class="memory-btn" onclick="openMemories()">
+          <img src="polaroid 1.png" class="memory-img">
+          <p>memories</p>
+        </div>
+        <div class="message-btn" onclick="openMessage()">
+          <img src="lettercat1.png" class="message-img">
+          <p>message</p>
+        </div>
+        <div class="playlist-btn" onclick="openMusic()">
+          <img src="headphones1.png" class="playlist-img"> 
+          <p>music 4 u</p>
+        </div>      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MEMORIES PAGE -->
+<div id="memories-page">
+  <button class="back-btn" onclick="backToMain()">
+    <img src="tumblr_aa840192e61fde2f2be2a7a251a9a766_4517c01c_75.webp"> go back
+  </button>
+
+  <div class="memory-layout">
+    <img src="photobooth1.png" class="photo-strip strip-left">
+    <img src="photobooth2.png" class="photo-strip strip-right">
+    <img src="memoriememo1.png" class="memory-memo">
+    <img src="memoriememo2.png" class="memory-memo">
+
+    <div class="memory-side">
+      <img src="photo1.jpg" class="memory-pic pic1">
+      <img src="photo2.jpg" class="memory-pic pic2">
+      <img src="photo3.jpg" class="memory-pic pic3">
+      <img src="spiral.png" class="spiral2">
+      <img src="starpink.png" class="starpink">
+      <img src="stardesign.png" class="stardesign">
+      <img src="laceheart.png" class="laceheart">
+      <img src="angelwings.png" class="angelwings">
+      <img src="meow.png" class="meow">
+      <img src="stardivider.png" class="stardivider">
+    </div>
+  </div>
+</div>
+
+<!-- MESSAGE PAGE -->
+<div id="message-page">
+  <button class="back-btn" onclick="backToMain()">
+    <img src="tumblr_aa840192e61fde2f2be2a7a251a9a766_4517c01c_75.webp"> go back
+  </button>
+
+  <div class="page-content">
+    <div class="message-collage">
+      <img src="jevin_blue1.jpg" class="bf bf1">
+      <div class="memo-stack">
+        <img src="tomydearest.png" style="width: 100%; height: auto; margin-top: -260px;">
+        <img src="message1.png" class="memo">
+        <img src="message2.png" class="memo">
+      </div>
+      <img src="jevin_blue2.jpg" class="bf bf2">
+      <img src="jevin_green.jpg" class="bf bf3">
+      <img src="polkastar.png" class="polkastar">
+      <img src="spiral.png" class="spiral">
+      <img src="cloversticker.png" class="cloversticker">
+      <img src="teaparty.png" class="teaparty">
+      <img src="cinnamoroll_sticker.png" class="cinnamoroll">
+      <img src="heart.png" class="heart">
+      <img src="starz.png" class="starz">
+      <img src="shiny.png" class="shiny">
+    </div>
+  </div>
+</div>
+
+<!-- MUSIC PAGE -->
+<audio id="song1" src="music desu/beaches - beabadoobee.mp3"></audio>
+<audio id="song2" src="music desu/kasama kang tumanda - toni gonzaga.mp3"></audio>
+<audio id="song3" src="music desu/2 hold U - clairo.mp3"></audio>
+<audio id="song4" src="music desu/valentine - laufey.mp3"></audio>
+<audio id="song5" src="music desu/my jinji - 落日飛車 sunset rollercoaster.mp3"></audio>
+<audio id="song6" src="music desu/last night on earth - green day.mp3"></audio>
+<audio id="song7" src="music desu/treehouse - alex g & emily yacina.mp3"></audio>
+<audio id="song8" src="music desu/baby im yours - cass elliot.mp3"></audio>
+
+<div id="music-page" style="display:none;">
+    
+    <button class="back-btn" onclick="exitMusicPage()">
+        <img src="tumblr_aa840192e61fde2f2be2a7a251a9a766_4517c01c_75.webp"> go back
+    </button>
+
+    <div class="music-layout">
+
+        <div class="music-left">
+            <img src="jellomusic.png" class="music-art">
+        </div>
+
+        <div class="music-right">
+            
+            <div class="song-container">
+                
+                <img src="bearbear.png" class="music-banner banner-top">
+                
+                <p class="music-subtitle"><img src="noteblue.webp"> some small playlist i made with the songs that remind me of u <img src="melody.webp"><img src="hearty.webp"></p>
+                
+                <div class="columns-wrapper">
+                    
+                    <div class="song-column">
+                        <div class="song" id="container-song1">
+                            <img src="rilakkuma.jpeg">
+                            <div class="song-info">
+                                <p class="title"> beaches</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : beabadoobee</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song1')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song1"></div></div>
+                                        <span class="time-display" id="time-song1">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="song" id="container-song2">
+                            <img src="us.jpeg">
+                            <div class="song-info">
+                                <p class="title"> kasama kang tumanda</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : toni gonzaga</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song2')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song2"></div></div>
+                                        <span class="time-display" id="time-song2">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="song" id="container-song3">
+                            <img src="cinna_icon.jpeg">
+                            <div class="song-info">
+                                <p class="title"> 2 hold U</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : clairo</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song3')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song3"></div></div>
+                                        <span class="time-display" id="time-song3">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="song" id="container-song4">
+                            <img src="cuppycake.jpeg">
+                            <div class="song-info">
+                                <p class="title"> valentine</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : laufey</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song4')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song4"></div></div>
+                                        <span class="time-display" id="time-song4">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song-column">
+                        <div class="song" id="container-song5">
+                            <img src="myjinji.jpeg">
+                            <div class="song-info">
+                                <p class="title"> my jinji</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : 落日飛車 sunset rollercoaster</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song5')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song5"></div></div>
+                                        <span class="time-display" id="time-song5">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="song" id="container-song6">
+                            <img src="YAY.jpeg">
+                            <div class="song-info">
+                                <p class="title"> last night on earth</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : green day</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song6')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song6"></div></div>
+                                        <span class="time-display" id="time-song6">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="song" id="container-song7">
+                            <img src="tryme.jpeg">
+                            <div class="song-info">
+                                <p class="title"> treehouse</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : alex g & emily yacina</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song7')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song7"></div></div>
+                                        <span class="time-display" id="time-song7">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="song" id="container-song8">
+                            <img src="whenwegetolder.jpeg">
+                            <div class="song-info">
+                                <p class="title"> baby im yours</p>
+                                <p class="artist">˖♬⋆.˚𝄞 : cass elliot</p>
+                                <div class="player-controls">
+                                    <button class="play-toggle" onclick="toggleSong('song8')">▶</button>
+                                    <div class="progress-wrapper">
+                                        <div class="progress-bar"><div class="progress-fill" id="fill-song8"></div></div>
+                                        <span class="time-display" id="time-song8">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <img src="bearbear.png" class="music-banner banner-bottom">
+
+			<!--stickerz-->
+			
+			<img src="starshiny.png" class="starshiny">
+			<img src="spiral2.png" class="spiral2">
+			<img src="MREOW.png" class="MREOW">
+			<img src="heartbling.png" class="heartbling">
+			<img src="polkastar.png" class="polkastar2">
+			<img src="heart.png" class="heart2">
+			<img src="heartlace.png" class="heartlace">
+			
+            </div> </div>
+
+    </div>
+</div>
+<script>
+function showPage(pageId){
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("memories-page").style.display = "none";
+    document.getElementById("message-page").style.display = "none";
+    document.getElementById("music-page").style.display = "none";
+
+    const page = document.getElementById(pageId);
+    if (pageId === "main") {
+        page.style.display = "flex";
+    } else {
+        page.style.display = "block";
+    }
+}
+
+function openGift(){
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("main").style.display = "flex";
+}
+
+function goBack(){
+    document.getElementById("main").style.display = "none";
+    document.getElementById("intro").style.display = "flex";
+}
+
+function openMemories(){
+    showPage("memories-page");
+}
+
+function openMessage(){
+    showPage("message-page");
+}
+
+function openMusic(){
+    showPage("music-page");
+}
+
+function backToMain(){
+    document.getElementById("memories-page").style.display = "none";
+    document.getElementById("message-page").style.display = "none";
+    document.getElementById("music-page").style.display = "none";
+    document.getElementById("main").style.display = "flex";
+}
+
+const bgMusic = document.getElementById("bg-music");
+bgMusic.volume = 0.3;
+bgMusic.loop = true;
+
+let musicStarted = false;
+
+function startMusic() {
+    if (musicStarted) return;
+    bgMusic.play().then(() => {
+        musicStarted = true;
+    }).catch((err) => {
+        console.log("Autoplay blocked, waiting for user interaction...");
+    });
+}
+
+window.addEventListener("load", () => {
+    startMusic();
+});
+
+document.addEventListener("click", () => {
+    startMusic();
+}, { once: true });
+
+
+
+
+let currentSong = null;
+let fadeInterval = null;
+
+
+function toggleSong(songId) {
+    const song = document.getElementById(songId);
+    const container = document.getElementById("container-" + songId);
+    const button = container.querySelector(".play-toggle");
+    
+    if (currentSong && currentSong.id !== songId) {
+        resetSongStyle(currentSong.id);
+        currentSong.pause();
+        currentSong.currentTime = 0;
+    }
+
+    if (song.paused) {
+        song.play();
+        button.innerText = "❚❚"; 
+        currentSong = song;
+        fadeVolume(bgMusic, 0); 
+        
+        song.ontimeupdate = function() {
+            updateTimeline(songId, song);
+        };
+        
+        song.onended = function() {
+            resetSongStyle(songId);
+            fadeVolume(bgMusic, 0.3);
+        };
+
+    } else {
+        song.pause();
+        button.innerText = "▶"; 
+        fadeVolume(bgMusic, 0.3); 
+    }
+}
+
+
+function updateTimeline(songId, song) {
+    const fill = document.getElementById("fill-" + songId);
+    const timeDisplay = document.getElementById("time-songId".replace("songId", songId));
+    
+    // Line Fill Percentage
+    if (song.duration) {
+        const percentage = (song.currentTime / song.duration) * 100;
+        fill.style.width = percentage + "%";
+    }
+    
+    // Format Time (Mins:Secs)
+    let mins = Math.floor(song.currentTime / 60);
+    let secs = Math.floor(song.currentTime % 60);
+    if (secs < 10) secs = '0' + secs;
+    timeDisplay.innerText = mins + ":" + secs;
+}
+
+
+function fadeVolume(audioTarget, targetVolume) {
+    clearInterval(fadeInterval);
+    fadeInterval = setInterval(() => {
+        if (audioTarget.volume < targetVolume) {
+            audioTarget.volume = Math.min(targetVolume, audioTarget.volume + 0.05);
+        } else if (audioTarget.volume > targetVolume) {
+            audioTarget.volume = Math.max(targetVolume, audioTarget.volume - 0.05);
+        }
+        
+        if (audioTarget.volume === targetVolume) {
+            clearInterval(fadeInterval);
+        }
+    }, 100); 
+}
+
+
+function resetSongStyle(songId) {
+    const container = document.getElementById("container-" + songId);
+    if(container) {
+        container.querySelector(".play-toggle").innerText = "▶";
+        document.getElementById("fill-" + songId).style.width = "0%";
+        document.getElementById("time-" + songId).innerText = "0:00";
+    }
+}
+
+
+function exitMusicPage() {
+    if (currentSong) {
+        currentSong.pause();
+        currentSong.currentTime = 0;
+        resetSongStyle(currentSong.id);
+        currentSong = null;
+    }
+    fadeVolume(bgMusic, 0.3); 
+    backToMain();
+}
+
+
+
+
+
+// FUNCTION PARA MAGING MALINIS ANG ORAS
+function formatTime(seconds) {
+    if (isNaN(seconds)) return "0:00";
+    let mins = Math.floor(seconds / 60);
+    let secs = Math.floor(seconds % 60);
+    if (secs < 10) secs = '0' + secs;
+    return mins + ":" + secs;
+}
+
+// PIPILITIN ANG BROWSER NA I-FETCH AGAD ANG ORAS PAGKA-LOAD
+function loadSongDurations() {
+    const songIds = ['song1', 'song2', 'song3', 'song4', 'song5', 'song6', 'song7', 'song8'];
+    
+    songIds.forEach(id => {
+        const song = document.getElementById(id);
+        const timeDisplay = document.getElementById("time-" + id);
+        
+        if (song) {
+            if (song.readyState >= 1) {
+                timeDisplay.innerText = "0:00 / " + formatTime(song.duration);
+            } else {
+                song.addEventListener('loadedmetadata', function() {
+                    timeDisplay.innerText = "0:00 / " + formatTime(song.duration);
+                });
+            }
+        }
+    });
+}
+window.addEventListener('DOMContentLoaded', loadSongDurations);
+
+// PALITAN MO RIN ITONG `updateTimeline` NA FUNCTION PARA SUMABAY ANG FORMAT HABANG NAG-PLAY
+function updateTimeline(songId, song) {
+    const fill = document.getElementById("fill-" + songId);
+    const timeDisplay = document.getElementById("time-" + songId);
+    
+    if (song.duration) {
+        const percentage = (song.currentTime / song.duration) * 100;
+        fill.style.width = percentage + "%";
+    }
+    timeDisplay.innerText = formatTime(song.currentTime) + " / " + formatTime(song.duration);
+}
+</script>
+
+</body>
+</html>
