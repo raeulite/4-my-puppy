@@ -826,14 +826,14 @@ h1 {
 </div>
 
 <!-- MUSIC PAGE -->
-<audio id="song1" src="music desu/beaches - beabadoobee.mp3"></audio>
-<audio id="song2" src="music desu/kasama kang tumanda - toni gonzaga.mp3"></audio>
-<audio id="song3" src="music desu/2 hold U - clairo.mp3"></audio>
-<audio id="song4" src="music desu/valentine - laufey.mp3"></audio>
-<audio id="song5" src="music desu/my jinji - 落日飛車 sunset rollercoaster.mp3"></audio>
-<audio id="song6" src="music desu/last night on earth - green day.mp3"></audio>
-<audio id="song7" src="music desu/treehouse - alex g & emily yacina.mp3"></audio>
-<audio id="song8" src="music desu/baby im yours - cass elliot.mp3"></audio>
+<audio id="song1" src="beaches - beabadoobee.mp3"></audio>
+<audio id="song2" src="kasama kang tumanda - toni gonzaga.mp3"></audio>
+<audio id="song3" src="2 hold U - clairo.mp3"></audio>
+<audio id="song4" src="valentine - laufey.mp3"></audio>
+<audio id="song5" src="my jinji - 落日飛車 sunset rollercoaster.mp3"></audio>
+<audio id="song6" src="last night on earth - green day.mp3"></audio>
+<audio id="song7" src="treehouse - alex g & emily yacina.mp3"></audio>
+<audio id="song8" src="baby im yours - cass elliot.mp3"></audio>
 
 <div id="music-page" style="display:none;">
     
@@ -1110,13 +1110,11 @@ function updateTimeline(songId, song) {
     const fill = document.getElementById("fill-" + songId);
     const timeDisplay = document.getElementById("time-songId".replace("songId", songId));
     
-    // Line Fill Percentage
     if (song.duration) {
         const percentage = (song.currentTime / song.duration) * 100;
         fill.style.width = percentage + "%";
     }
     
-    // Format Time (Mins:Secs)
     let mins = Math.floor(song.currentTime / 60);
     let secs = Math.floor(song.currentTime % 60);
     if (secs < 10) secs = '0' + secs;
@@ -1161,11 +1159,6 @@ function exitMusicPage() {
     backToMain();
 }
 
-
-
-
-
-// FUNCTION PARA MAGING MALINIS ANG ORAS
 function formatTime(seconds) {
     if (isNaN(seconds)) return "0:00";
     let mins = Math.floor(seconds / 60);
@@ -1174,7 +1167,6 @@ function formatTime(seconds) {
     return mins + ":" + secs;
 }
 
-// PIPILITIN ANG BROWSER NA I-FETCH AGAD ANG ORAS PAGKA-LOAD
 function loadSongDurations() {
     const songIds = ['song1', 'song2', 'song3', 'song4', 'song5', 'song6', 'song7', 'song8'];
     
@@ -1195,7 +1187,6 @@ function loadSongDurations() {
 }
 window.addEventListener('DOMContentLoaded', loadSongDurations);
 
-// PALITAN MO RIN ITONG `updateTimeline` NA FUNCTION PARA SUMABAY ANG FORMAT HABANG NAG-PLAY
 function updateTimeline(songId, song) {
     const fill = document.getElementById("fill-" + songId);
     const timeDisplay = document.getElementById("time-" + songId);
